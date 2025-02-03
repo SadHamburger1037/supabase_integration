@@ -34,9 +34,9 @@ function Layout(props) {
           {appName}
         </div>
         <div class="flex gap-2 snap-center">
-          <A href="/" class="bg-orange-600 p-2 rounded-lg hover:bg-orange-400">Naslovnica</A>
+          <A href="/" class="bg-orange-600 p-2 rounded-lg hover:bg-orange-400">Projekti</A>  
           <Show when={session()}>
-            <A href="/projects" class="bg-orange-600 p-2 rounded-lg hover:bg-orange-400">Projekti</A>
+            <A href="/projects" class="bg-orange-600 p-2 rounded-lg hover:bg-orange-400">Novi projekt</A>
           </Show>
           <Show when={!session()}>
             <A href="/signin" class="bg-orange-600 p-2 rounded-lg hover:bg-orange-400">Prijava</A>
